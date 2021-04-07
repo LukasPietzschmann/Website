@@ -1,0 +1,20 @@
+:root{
+	--footer-height: 1.7em;
+}
+
+.footer {
+	height: var(--footer-height);
+}
+
+.footer * {
+	margin-left: .4em;
+	margin-right: .4em;
+}
+
+.footer a {
+	color: rgb(27, 27, 27);
+}
+
+.footer a:hover {
+	color: rgb(92, 92, 92);
+}
