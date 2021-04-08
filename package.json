@@ -1,6 +1,6 @@
 {
   "name": "website-frontend",
-  "homepage": "https://lukaspietzschmann.github.io/Website/",
+  "homepage": "https://lukas.pietzschmann.org",
   "version": "1.0",
   "private": true,
   "dependencies": {
