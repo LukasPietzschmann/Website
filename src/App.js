@@ -15,7 +15,7 @@ function App() {
 		<Router>
 			<Switch>
 				<Route path='/' exact>
-					<FrontPage style={{ height: 'calc(100vh - var(--footer-height))' }} />
+					<FrontPage style={{ height: 'calc(100vh)' }} />
 				</Route>
 				<Route path='/dataprotection' exact component={DataProtection} />
 				<Route path='/imprint' exact component={Imprint} />
