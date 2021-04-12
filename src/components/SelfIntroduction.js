@@ -1,6 +1,6 @@
 function SelfIntroduction({ className }) {
 	return (
-		<div className={`card shadow-lg ${className}`}>
+		<div className={`card ${className}`}>
 			<div className='card-body'>
 				<h1 className='card-title'>Lukas Pietzschmann</h1>
 				<hr />
