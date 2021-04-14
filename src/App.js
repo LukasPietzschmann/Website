@@ -9,7 +9,7 @@ import DataProtection from './components/Dataprotection';
 
 import './App.css';
 import './components/Footer/Footer.css';
-import Memes from './components/Memes';
+import Memes from './components/Memes/Memes';
 
 function App() {
 	return (
