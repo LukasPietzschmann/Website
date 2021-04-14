@@ -38,8 +38,8 @@ function Memes({ className }) {
 				<div className='d-flex flex-wrap justify-content-around'>
 					{links.map(({ link, width, height, title, url }, i) => {
 						return (
-							<Suspense key={i} fallback={<img className='bg-light m-2 align-self-center' height={height} width={width} src={Loader} alt='Loading' style={{objectFit: 'contain'}}/>}>
-								<Element title={title} imgLink={link} siteLink={url} className='m-2 align-self-center' />
+							<Suspense key={i} fallback={<img className='bg-light m-2 align-self-center' height={height} width={width} src={Loader} alt='Loading' style={{ objectFit: 'contain', maxWidth: 'calc(100vw - 10px)'}}/>}>
+								<Element title={title} imgLink={link} siteLink={url} className='m-2 align-self-center' style={{maxWidth: 'calc(100vw - 10px)'}} />
 							</Suspense>
 						)
 					})}

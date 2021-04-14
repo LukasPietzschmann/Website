@@ -1,6 +1,6 @@
 import { useImage } from 'react-image';
 
-function Element({ title, imgLink, siteLink, className }) {
+function Element({ title, imgLink, siteLink, className, style }) {
 	const { src } = useImage({
 		srcList: imgLink
 	});
@@ -8,7 +8,7 @@ function Element({ title, imgLink, siteLink, className }) {
 	return (
 		<div className={className}>
 			<a href={siteLink}>
-				<img className='border shadow border-dark rounded' src={src} alt='title'/>
+				<img className='border shadow border-dark rounded' src={src} alt='title' style={style}/>
 			</a>
 			<div className='text-center text-secondary font-weight-light'>{title}</div>
 		</div>
