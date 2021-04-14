@@ -27,7 +27,7 @@ function Memes({ className }) {
 				<div class='form-group'>
 					<label for='count'>Gif-Count (More Gifs -> More Happyness)</label>
 					<input type='number' class='form-control' id='count' value={maxGifs} onChange={(e) => setMax(e.target.value)} />
-					<small id='emailHelp' class='form-text text-muted'>I Promise I wont share the Amount of Gifs you need to overcome your Pain</small>
+					<small	 class='form-text text-muted'>I Promise I wont share the Amount of Gifs you need to overcome your Pain</small>
 				</div>
 				<button id='refresh' className='btn btn-outline-primary float-right' onClick={() => setSeed(Math.floor(Math.random() * (4999 - maxGifs)))}>Regenerade Seed</button>
 			</form>
@@ -36,7 +36,7 @@ function Memes({ className }) {
 				<div className='d-flex flex-wrap justify-content-around'>
 					{links.map(({ link, title, url }, i) => {
 						return (
-							<Element title={title} imgLink={link} siteLink={url} className='m-2' />
+							<Element title={title} imgLink={link} siteLink={url} className='m-2 align-self-center' />
 						)
 					})}
 				</div>
